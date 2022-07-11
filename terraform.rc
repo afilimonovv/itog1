@@ -1,7 +1,12 @@
-provider_installation {
-   dev_overrides {
-    "yandex-cloud/yandex" = "/path/to/local/provider"
+terraform {
+  required_providers {
+    yandex = {
+      source = "yandex-cloud/yandex"
+    }
   }
+  required_version = ">= 0.13"
+}
 
-   direct {}
- }
+
+
+}
