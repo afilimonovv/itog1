@@ -2,6 +2,11 @@ pipeline {
     agent any
     tool name: 'terraform101', type: 'terraform'
     stages {
+        stage ('git check') {
+            steps {
+                git 'https://github.com/afilimonovv/itog1.git'
+            }
+        }
         stage ('terraforminit') {
             steps {
                 sh 'terraform init'
