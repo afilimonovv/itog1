@@ -8,12 +8,12 @@ terraform {
 }
 
 
-provider "yandex" {
-  token     = "..........."
-  cloud_id  = "..........."
-  folder_id = "............"
-  zone      = "ru-central1-b"
-}
+#provider "yandex" {
+#  token     = "..........."
+#  cloud_id  = "..........."
+#  folder_id = "............"
+#  zone      = "ru-central1-b"
+#}
 
 data "yandex_compute_image" "ubuntu_image" {
     family = "ubuntu-2004-lts"
