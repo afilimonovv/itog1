@@ -43,7 +43,7 @@ resource "yandex_compute_instance" "vm-1" {
 
   metadata = {
     serial-port-enable = 1
-    "user-data": "#cloud-config\nusers:\n  - name: test1\n    groups: sudo\n    shell: /bin/bash\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    ssh-authorized-keys:\n  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC3nukNpc6iLzbaRsvMt+qp+rYpcc99yrd7/LrORKlXm0mWqqYKvL2n8fIZ3oR2mUg9CKlGH9ry/SrccU2mYTEMMiV1fBsNFuEAL2RmyupcLPmm3gX9ZRVSC0K1L9cdZ6IfYxaNR9Pfk73fdjGFz1oPdI8J1VwlA2V2NRx9HWroKTjkw7ul/xZhSkQG3N2wZdz7GogslC3U6vWwOmFuvxQZCFza+G6Vf7jFqFvbXhKHdD9yZFxJUsHB8U+9Ca8vcGfXB9HzNiY+wBS8pn+hMBTdbfhW+YVmDwOt6uKuFNiUyQNyhDoUf5OD8PjIstNWKas/ECoElzJtidQvUJDFamZ user1@PCwork
+    "user-data": "#cloud-config\nusers:\n  - name: test1\n    groups: sudo\n    shell: /bin/bash\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    ssh-authorized-keys:\n  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC3nukNpc6iLzbaRsvMt+qp+rYpcc99yrd7/LrORKlXm0mWqqYKvL2n8fIZ3oR2mUg9CKlGH9ry/SrccU2mYTEMMiV1fBsNFuEAL2RmyupcLPmm3gX9ZRVSC0K1L9cdZ6IfYxaNR9Pfk73fdjGFz1oPdI8J1VwlA2V2NRx9HWroKTjkw7ul/xZhSkQG3N2wZdz7GogslC3U6vWwOmFuvxQZCFza+G6Vf7jFqFvbXhKHdD9yZFxJUsHB8U+9Ca8vcGfXB9HzNiY+wBS8pn+hMBTdbfhW+YVmDwOt6uKuFNiUyQNyhDoUf5OD8PjIstNWKas/ECoElzJtidQvUJDFamZ user1@PCwork"
 
   }
 
